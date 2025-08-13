@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Ship a Car | Obsidian Auto Transport</title>
+  <meta name="description" content="A clear, client-friendly guide to shipping your vehicle with Obsidian Auto Transport. Transparent pricing, live updates, and nationwide coverage." />
+  <meta property="og:title" content="How to Ship a Car | Obsidian Auto Transport" />
+  <meta property="og:description" content="Ship your car in three simple steps with Obsidian Auto Transport. Transparent pricing, live updates, and nationwide coverage." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://obsidianautotransport.example/" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f1a;          /* near-black slate */
+      --panel:#0f172a;       /* deep slate */
+      --panel-2:#111827;     /* slightly lighter */
+      --text:#e5e7eb;        /* gray-200 */
+      --muted:#9ca3af;       /* gray-400 */
+      --brand:#64748b;       /* slate-500 */
+      --accent:#22d3ee;      /* cyan-400 */
+      --accent-2:#60a5fa;    /* blue-400 */
+      --ring: 0 0 0 3px rgba(34,211,238,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:radial-gradient(1200px 600px at 80% -10%,rgba(96,165,250,.15),transparent 65%),var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,var(--bg),rgba(11,15,26,.7));backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 10px 30px rgba(34,211,238,.25)}
+    .brand h1{font-size:18px;margin:0;font-weight:700;letter-spacing:.3px}
+    .cta{display:flex;gap:10px;align-items:center}
+    .btn{padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02);color:var(--text);font-weight:600;transition:.2s ease;}
+    .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.18)}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0b1220;border:none;box-shadow:0 10px 30px rgba(96,165,250,.25)}
+    .btn.primary:hover{filter:saturate(115%)}
+
+    .hero{position:relative;overflow:hidden}
+    .hero-inner{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:40px 0}
+    .hero h2{font-size:44px;line-height:1.05;margin:0 0 14px;font-weight:800}
+    .hero p{color:var(--muted);font-size:18px;margin:0 0 18px}
+    .hero .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px}
+    .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}
+    .stat{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    .stat h3{margin:0;font-size:26px}
+    .stat p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    .section{padding:56px 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .panel{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px}
+    .panel h3{margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .kicker{display:inline-block;font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:#a5b4fc;background:rgba(165,180,252,.12);border:1px solid rgba(165,180,252,.25);padding:6px 10px;border-radius:999px;margin-bottom:10px}
+
+    .steps .step{position:relative;padding-left:44px}
+    .steps .step + .step{margin-top:14px}
+    .step .num{position:absolute;left:0;top:0;width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#071225;font-weight:800}
+
+    .feature{display:flex;gap:14px}
+    .feature svg{flex:0 0 auto;width:28px;height:28px}
+    .feature h4{margin:0}
+    .feature p{margin:6px 0 0}
+
+    .callout{display:flex;flex-direction:column;gap:16px;align-items:flex-start;background:linear-gradient(135deg,rgba(34,211,238,.1),rgba(96,165,250,.1));border:1px solid rgba(96,165,250,.35);padding:22px;border-radius:16px}
+
+    .faq details{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px}
+    .faq details + details{margin-top:10px}
+    .faq summary{cursor:pointer;font-weight:600}
+    .faq p{margin:10px 0 0;color:var(--muted)}
+
+    form{display:grid;gap:10px}
+    input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:var(--text);outline:none}
+    input:focus,select:focus,textarea:focus{box-shadow:var(--ring);border-color:rgba(255,255,255,.25)}
+    label{font-size:13px;color:var(--muted)}
+
+    footer{border-top:1px solid rgba(255,255,255,.08);padding:32px 0;margin-top:30px;background:linear-gradient(180deg,rgba(17,24,39,.2),transparent)}
+    .foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
+    .copyright{color:var(--muted);font-size:13px;margin-top:10px}
+
+    @media (max-width: 920px){
+      .hero-inner{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      header .nav{gap:8px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- minimalist "obsidian shard" mark -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2L20 8l-4 5-4 9-4-9L4 8l8-6z" fill="rgba(2,6,23,.85)"/>
+            <path d="M12 2l8 6-8 14L4 8l8-6z" fill="white" fill-opacity=".75"/>
+          </svg>
+        </div>
+        <h1>Obsidian Auto Transport</h1>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#quote">Get a Quote</a>
+        <a class="btn primary" href="tel:+18333832277">Call: (833) 383‑2277</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="kicker">How to ship a car</span>
+          <h2>Ship your vehicle in 3 simple steps.</h2>
+          <p>Obsidian Auto Transport makes vehicle shipping clear, secure, and predictable. Transparent pricing, live updates, and care you can feel at pickup and delivery.</p>
+          <div class="stats">
+            <div class="stat">
+              <h3>Nationwide</h3>
+              <p>Door‑to‑door coverage across the continental U.S.</p>
+            </div>
+            <div class="stat">
+              <h3>Open & Enclosed</h3>
+              <p>Options for daily drivers, classics, and exotics.</p>
+            </div>
+            <div class="stat">
+              <h3>Real‑time Updates</h3>
+              <p>Notifications and human support from quote to keys.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card panel">
+          <h3 style="margin-top:0">Instant Quote</h3>
+          <p class="muted" style="margin-top:6px">Tell us about your vehicle and route, and we’ll tailor pricing to your timeline and transport style.</p>
+          <form id="quote" onsubmit="event.preventDefault(); alert('Thanks! A team member will follow up shortly.');">
+            <div class="grid-2">
+              <div>
+                <label for="from">Pickup ZIP</label>
+                <input id="from" name="from" placeholder="e.g., 98057" required>
+              </div>
+              <div>
+                <label for="to">Delivery ZIP</label>
+                <input id="to" name="to" placeholder="e.g., 22101" required>
+              </div>
+            </div>
+            <div class="grid-2">
+              <div>
+                <label for="year">Vehicle Year</label>
+                <input id="year" name="year" placeholder="2024" inputmode="numeric">
+              </div>
+              <div>
+                <label for="type">Vehicle Type</label>
+                <select id="type" name="type">
+                  <option>Coupe / Sedan</option>
+                  <option>SUV / Crossover</option>
+                  <option>Pickup</option>
+                  <option>Motorcycle</option>
+                  <option>Classic / Exotic</option>
+                  <option>Oversized</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid-2">
+              <div>
+                <label for="method">Transport</label>
+                <select id="method" name="method">
+                  <option>Open Carrier</option>
+                  <option>Enclosed Carrier</option>
+                </select>
+              </div>
+              <div>
+                <label for="date">Desired Pickup</label>
+                <input id="date" name="date" type="date">
+              </div>
+            </div>
+            <button class="btn primary" type="submit">Request Quote</button>
+            <a class="btn" href="mailto:dispatch@obsidianautotransport.com">Email Dispatch</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="grid-2">
+        <div class="panel steps">
+          <span class="kicker">The 3‑step outline</span>
+          <h3>From quote to keys</h3>
+          <div class="step">
+            <div class="num">1</div>
+            <h4 style="margin:0 0 6px">Get your personalized quote</h4>
+            <p class="muted">Share route and vehicle details—online or with a specialist. We’ll confirm pricing and secure your pickup window with zero surprises.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h4 style="margin:0 0 6px">Pickup & live updates</h4>
+            <p class="muted">Your vehicle is inspected, loaded, and transported by vetted carriers. Track progress and reach a real human anytime.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h4 style="margin:0 0 6px">Delivery & handover</h4>
+            <p class="muted">At arrival, we do a final walkthrough, unload carefully, and hand back the keys—simple, transparent, complete.</p>
+          </div>
+        </div>
+        <div class="panel">
+          <span class="kicker">Why Obsidian</span>
+          <h3>What sets us apart</h3>
+          <div class="grid-2">
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12l4 4 12-12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <h4>Transparent pricing</h4>
+                <p class="muted">Clear rates up front. No hidden fees. Written confirmations on every order.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <h4>Real‑time updates</h4>
+                <p class="muted">Know where things stand. Proactive status pings and responsive dispatch.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 7-7 13L5 9l7-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              <div>
+                <h4>Open & enclosed</h4>
+                <p class="muted">Daily drivers or exotics—choose the protection level that fits your vehicle.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18M12 3v18" stroke="currentColor" stroke-width="2"/></svg>
+              <div>
+                <h4>Nationwide reach</h4>
+                <p class="muted">Door‑to‑door service throughout the lower 48, including remote areas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="callout" style="margin-top:12px">
+            <strong>Insurance & coverage:</strong>
+            <span class="muted">All carriers provide standard cargo coverage; additional protection available on request. Ask us for details specific to your route and vehicle.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="grid-3">
+        <div class="panel">
+          <span class="kicker">Prep checklist</span>
+          <h3>Ready your vehicle</h3>
+          <ul class="muted">
+            <li>Wash and document condition (photos from all angles).</li>
+            <li>Remove toll tags and personal items; keep weight minimal.</li>
+            <li>Fuel at ~¼ tank for safety and loading.</li>
+            <li>Note any quirks (low clearance, dead battery, alarms).</li>
+            <li>Provide a backup contact in case plans change day‑of.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <span class="kicker">Timing</span>
+          <h3>How long does it take?</h3>
+          <p class="muted">Transit varies by distance, route, and weather. As a planning guideline, many routes average about two days per 500 miles. We’ll give you a live ETA once your carrier is assigned.</p>
+        </div>
+        <div class="panel">
+          <span class="kicker">Policies</span>
+          <h3>No‑surprise booking</h3>
+          <p class="muted">We confirm all details in writing at booking. Need to cancel or adjust? Talk to us—flexible windows are often available when life happens.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container faq">
+      <div class="grid-2">
+        <div>
+          <span class="kicker">FAQ</span>
+          <h3>Common questions</h3>
+          <details>
+            <summary>Can I put belongings in the car?</summary>
+            <p>We recommend keeping items under the window line and within 100 lbs total. Please avoid valuables and anything loose that could shift during transit.</p>
+          </details>
+          <details>
+            <summary>Do I need to be there at pickup?</summary>
+            <p>A designated adult must be present for inspection and handoff. If you can’t be there, we can coordinate with an authorized representative.</p>
+          </details>
+          <details>
+            <summary>What if my car is inoperable?</summary>
+            <p>We ship in‑op vehicles too. Let us know ahead of time so we arrange a winch‑equipped carrier and allow for extra loading time.</p>
+          </details>
+          <details>
+            <summary>Is my vehicle insured in transit?</summary>
+            <p>Yes—standard cargo coverage is included by the assigned carrier. We can review coverage limits for your specific shipment and provide options if you’d like higher limits.</p>
+          </details>
+        </div>
+        <div class="panel">
+          <h3 style="margin-top:0">Talk to a shipping specialist</h3>
+          <p class="muted">Prefer a quick conversation? Our team is happy to walk you through timing, pricing, and carrier options in a few minutes.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn primary" href="tel:+18333832277">Call (833) 383‑2277</a>
+            <a class="btn" href="sms:+12063758266">Text (206) 375‑8266</a>
+            <a class="btn" href="mailto:dispatch@obsidianautotransport.com">Email Dispatch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="brand" style="margin-bottom:8px">
+          <div class="logo" aria-hidden="true"></div>
+          <strong>Obsidian Auto Transport</strong>
+        </div>
+        <p class="muted" style="margin:0">High‑integrity vehicle transport. Open and enclosed carriers. Nationwide coverage.</p>
+        <p class="copyright">© <span id="year"></span> Obsidian Auto Transport. All rights reserved.</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p class="muted">Renton, WA • dispatch@obsidianautotransport.com<br>Office: (833) 383‑2277</p>
+      </div>
+      <div>
+        <strong>Quick links</strong>
+        <ul class="muted" style="list-style:none;padding:0;margin:8px 0 0">
+          <li><a href="#quote">Get a Quote</a></li>
+          <li><a href="#">Carrier Requirements</a></li>
+          <li><a href="#">Customer Stories</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
